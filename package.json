@@ -1,0 +1,23 @@
+{
+  "name": "githubsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/scss/*.scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petar-antic/githubSearch.git"
+  },
+  "author": "petar_antic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petar-antic/githubSearch/issues"
+  },
+  "homepage": "https://github.com/petar-antic/githubSearch#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
