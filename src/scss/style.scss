@@ -356,12 +356,12 @@ body {
                 &:hover {
                     @media only screen and (min-width: 1400px) {
                         span {
-                            color: #90a4d4;
+                            color: $lightBlue;
                         }
                         .toggleImg {
                             svg {
                                 path {
-                                    fill: #90a4d4;
+                                    fill: $lightBlue;
                                 }
                             }
                         }
