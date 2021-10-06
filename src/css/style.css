@@ -381,13 +381,6 @@ body main section .profileInfo .firstSide div .website,
 body main section .profileInfo .secondSide div .website {
   margin-left: 13px;
 }
-@media only screen and (min-width: 1400px) {
-  body main section .profileInfo .firstSide div .website:hover,
-body main section .profileInfo .secondSide div .website:hover {
-    cursor: url("../../assets/pointer.png"), pointer;
-    text-decoration: underline;
-  }
-}
 
 .dark {
   transition: ease-in 0.3s;

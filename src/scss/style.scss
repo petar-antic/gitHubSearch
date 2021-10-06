@@ -321,13 +321,6 @@ body {
                         }
                         .website {
                             margin-left: 13px;
-                            &:hover {
-                                @media only screen and (min-width: 1400px) {
-                                    cursor: url('../../assets/pointer.png'),
-                                        pointer;
-                                    text-decoration: underline;
-                                }
-                            }
                         }
                     }
                 }

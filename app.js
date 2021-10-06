@@ -89,10 +89,20 @@ form.addEventListener('submit', (e) => {
                     website.innerHTML = 'Not Available';
                     website.classList.add('notAvailable');
                     websiteSvg.classList.add('notAvailable');
+                    website.style.textDecoration = 'none';
+                    website.addEventListener('mouseover', function () {
+                        website.style.cursor = 'default';
+                        website.style.textDecoration = 'none';
+                    });
                 } else {
                     websiteSvg.classList.remove('notAvailable');
                     website.classList.remove('notAvailable');
                     website.innerHTML = data.blog;
+                    website.addEventListener('mouseover', function () {
+                        website.style.cursor =
+                            'url(/assets/pointer.png), pointer';
+                        website.style.textDecoration = 'underline';
+                    });
                 }
 
                 if (data.twitter_username === null) {
