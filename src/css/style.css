@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  font-family: "Space Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f8ff;
+  transition: ease-in 0.3s;
+}
+body main {
+  padding: 31px 24px 79px 24px;
+  background-color: #f6f8ff;
+  transition: ease-in 0.3s;
+}
+@media only screen and (min-width: 768px) {
+  body main {
+    padding: 140px 98px 236px 97px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main {
+    padding: 144px 355px 170px 355px;
+  }
+}
+body main header {
+  display: flex;
+  justify-content: space-between;
+  transition: ease-in 0.3s;
+}
+body main header h1 {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: bold;
+  color: #222731;
+}
+body main header .toggle {
+  transition: ease-in 0.3s;
+  margin: 9px 0px;
+  display: flex;
+  gap: 16px;
+  border: none;
+  background-color: #f6f8ff;
+}
+@media only screen and (min-width: 1400px) {
+  body main header .toggle:hover {
+    cursor: url("../../assets/pointer.png"), pointer;
+  }
+  body main header .toggle:hover span {
+    color: #222731;
+  }
+  body main header .toggle:hover .toggleImg svg path {
+    fill: #222731;
+  }
+}
+body main header .toggle span {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #4b6a9b;
+}
+body main .searchBox {
+  position: relative;
+  padding: 36px 0px 0px 0px;
+  transition: ease-in 0.3s;
+}
+body main .searchBox form {
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  position: relative;
+}
+body main .searchBox form img {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  width: 20px;
+  height: 20.05px;
+}
+body main .searchBox form input {
+  transition: ease-in 0.3s;
+  background-color: #fefefe;
+  padding: 18px 92px 17px 40px;
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  font-size: 13px;
+  line-height: 25px;
+  outline: none;
+  color: #4b6a9b;
+}
+@media only screen and (min-width: 768px) {
+  body main .searchBox form input {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 18px 91px 17px 45px;
+  }
+}
+body main .searchBox form input::placeholder {
+  color: #4b6a9b;
+}
+@media only screen and (min-width: 1400px) {
+  body main .searchBox form input:hover {
+    cursor: url("../../assets/pointer.png"), pointer;
+  }
+}
+body main .searchBox form .error {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  color: #f74646;
+  position: absolute;
+  right: 95px;
+  top: 19px;
+}
+@media only screen and (min-width: 768px) {
+  body main .searchBox form .error {
+    font-size: 15px;
+    right: 100px;
+    top: 20px;
+  }
+}
+body main .searchBox form button {
+  position: absolute;
+  right: 7px;
+  bottom: 7.5px;
+  border: none;
+  background-color: #0079ff;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 12.5px 16px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1400px) {
+  body main .searchBox form button:hover {
+    cursor: url("../../assets/pointer.png"), pointer;
+    background-color: #60abff;
+  }
+}
+body main section {
+  transition: ease-in 0.3s;
+  background-color: #fefefe;
+  border-radius: 15px;
+  margin-top: 16px;
+  padding: 0px 24px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+@media only screen and (min-width: 768px) {
+  body main section {
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section {
+    padding: 0px 48px 0px 203px;
+  }
+}
+body main section .personalInfo {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 32px;
+}
+@media only screen and (min-width: 1400px) {
+  body main section .personalInfo {
+    position: relative;
+    flex-direction: column;
+  }
+}
+body main section .personalInfo .profilePicture {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+@media only screen and (min-width: 768px) {
+  body main section .personalInfo .profilePicture {
+    width: 117px;
+    height: 117px;
+    margin-right: 41px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section .personalInfo .profilePicture {
+    margin-left: -154px;
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section .personalInfo .rightSide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+body main section .personalInfo .rightSide h1 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media only screen and (min-width: 768px) {
+  body main section .personalInfo .rightSide h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+body main section .personalInfo .rightSide span {
+  font-size: 13px;
+  line-height: 19px;
+  color: #0079ff;
+}
+@media only screen and (min-width: 768px) {
+  body main section .personalInfo .rightSide span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section .personalInfo .rightSide span {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+body main section .personalInfo .rightSide h2 {
+  font-size: 13px;
+  line-height: 19px;
+  color: #697c9a;
+  font-weight: normal;
+  padding-top: 6px;
+}
+@media only screen and (min-width: 768px) {
+  body main section .personalInfo .rightSide h2 {
+    padding-top: 4px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section .personalInfo .rightSide h2 {
+    text-align: right;
+  }
+}
+body main section p {
+  padding: 33px 0px 23px 0px;
+  font-size: 13px;
+  line-height: 25px;
+  color: #4b6a9b;
+}
+@media only screen and (min-width: 768px) {
+  body main section p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section p {
+    padding: 5px 0px 32px 0px;
+  }
+}
+body main section .profileActivity {
+  transition: ease-in 0.3s;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 18px 0px 19px 0px;
+  border-radius: 10px;
+  background-color: #f6f8ff;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileActivity {
+    justify-content: flex-start;
+  }
+  body main section .profileActivity .repos {
+    margin-left: 32px;
+  }
+  body main section .profileActivity .followers {
+    margin-left: 99px;
+  }
+  body main section .profileActivity .following {
+    margin-left: 82px;
+  }
+}
+body main section .profileActivity div {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileActivity div {
+    text-align: left;
+  }
+}
+body main section .profileActivity div h1 {
+  font-size: 11px;
+  line-height: 16px;
+  color: #4b6a9b;
+  font-weight: normal;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileActivity div h1 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+body main section .profileActivity div span {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #2b3442;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileActivity div span {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+body main section .profileInfo {
+  transition: ease-in 0.3s;
+  padding: 24px 0px 48px 0px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileInfo {
+    padding-top: 11px 0px 40px 0px;
+    flex-direction: row;
+    column-gap: 65px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body main section .profileInfo {
+    padding: 18px 0px 52px 0px;
+  }
+}
+body main section .profileInfo .firstSide,
+body main section .profileInfo .secondSide {
+  padding-left: 24px;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileInfo .firstSide,
+body main section .profileInfo .secondSide {
+    padding-left: 0px;
+  }
+}
+body main section .profileInfo .firstSide div,
+body main section .profileInfo .secondSide div {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  body main section .profileInfo .firstSide div,
+body main section .profileInfo .secondSide div {
+    margin-top: 19px;
+  }
+}
+body main section .profileInfo .firstSide div .notAvailable,
+body main section .profileInfo .secondSide div .notAvailable {
+  opacity: 0.5;
+}
+body main section .profileInfo .firstSide div h1,
+body main section .profileInfo .secondSide div h1 {
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 16px;
+  font-weight: normal;
+  color: #4b6a9b;
+}
+body main section .profileInfo .firstSide div .place,
+body main section .profileInfo .secondSide div .place {
+  margin-left: 19px;
+}
+body main section .profileInfo .firstSide div .website,
+body main section .profileInfo .secondSide div .website {
+  margin-left: 13px;
+}
+body main section .profileInfo .firstSide div .website:hover,
+body main section .profileInfo .secondSide div .website:hover {
+  cursor: url("../../assets/pointer.png"), pointer;
+  text-decoration: underline;
+}
+
+.dark {
+  transition: ease-in 0.3s;
+  background-color: #141d2f;
+}
+.dark main {
+  transition: ease-in 0.3s;
+  background-color: #141d2f;
+}
+.dark main header {
+  transition: ease-in 0.3s;
+}
+.dark main header h1 {
+  color: #ffffff;
+}
+.dark main header .toggle {
+  transition: ease-in 0.3s;
+  background-color: #141d2f;
+}
+@media only screen and (min-width: 1400px) {
+  .dark main header .toggle:hover span {
+    color: #90a4d4;
+  }
+  .dark main header .toggle:hover .toggleImg svg path {
+    fill: #90a4d4;
+  }
+}
+.dark main header .toggle span {
+  color: #ffffff;
+}
+.dark main .searchBox form {
+  box-shadow: none;
+}
+.dark main .searchBox form input {
+  transition: ease-in 0.3s;
+  background-color: #1e2a47;
+  color: #ffffff;
+  transition: ease-in 0.3s;
+}
+.dark main .searchBox form input::placeholder {
+  color: #ffffff;
+}
+.dark main section {
+  transition: ease-in 0.3s;
+  background-color: #1e2a47;
+  box-shadow: none;
+}
+.dark main section .personalInfo .rightSide h1 {
+  color: #ffffff;
+}
+.dark main section .personalInfo .rightSide h2 {
+  color: #ffffff;
+}
+.dark main section p {
+  color: #ffffff;
+}
+.dark main section .profileActivity {
+  transition: ease-in 0.3s;
+  background-color: #141d2f;
+}
+.dark main section .profileActivity div h1 {
+  color: #ffffff;
+}
+.dark main section .profileActivity div span {
+  color: #ffffff;
+}
+.dark main section .profileInfo {
+  transition: ease-in 0.3s;
+}
+.dark main section .profileInfo .firstSide div h1,
+.dark main section .profileInfo .secondSide div h1 {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

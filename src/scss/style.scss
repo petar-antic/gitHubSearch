@@ -1,0 +1,423 @@
+@use '_variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $silver;
+    transition: ease-in 0.3s;
+    main {
+        padding: 31px 24px 79px 24px;
+        background-color: $silver;
+        transition: ease-in 0.3s;
+        @media only screen and (min-width: 768px) {
+            padding: 140px 98px 236px 97px;
+        }
+        @media only screen and (min-width: 1400px) {
+            padding: 144px 355px 170px 355px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            transition: ease-in 0.3s;
+            h1 {
+                font-size: $title1;
+                line-height: 39px;
+                font-weight: bold;
+                color: $fontColor;
+            }
+            .toggle {
+                transition: ease-in 0.3s;
+                margin: 9px 0px;
+                display: flex;
+                gap: 16px;
+                border: none;
+                background-color: $silver;
+                &:hover {
+                    @media only screen and (min-width: 1400px) {
+                        cursor: url('../../assets/pointer.png'), pointer;
+                        span {
+                            color: $fontColor;
+                        }
+                        .toggleImg {
+                            svg {
+                                path {
+                                    fill: $fontColor;
+                                }
+                            }
+                        }
+                    }
+                }
+                span {
+                    font-size: $title4;
+                    line-height: 19px;
+                    font-weight: bold;
+                    letter-spacing: 2.5px;
+                    text-transform: uppercase;
+                    color: $blueGray;
+                }
+            }
+        }
+        .searchBox {
+            position: relative;
+            padding: 36px 0px 0px 0px;
+            transition: ease-in 0.3s;
+            form {
+                box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+                border-radius: 15px;
+                position: relative;
+                img {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 16px;
+                    width: 20px;
+                    height: 20.05px;
+                }
+                input {
+                    transition: ease-in 0.3s;
+                    background-color: $white;
+                    padding: 18px 92px 17px 40px;
+                    border-radius: 15px;
+                    border: none;
+                    width: 100%;
+                    font-size: $title4;
+                    line-height: $textHeight;
+                    outline: none;
+                    color: $blueGray;
+                    @media only screen and (min-width: 768px) {
+                        font-size: 18px;
+                        line-height: 25px;
+                        padding: 18px 91px 17px 45px;
+                    }
+                    &::placeholder {
+                        color: $blueGray;
+                    }
+                    &:hover {
+                        @media only screen and (min-width: 1400px) {
+                            cursor: url('../../assets/pointer.png'), pointer;
+                        }
+                    }
+                }
+                .error {
+                    font-weight: bold;
+                    font-size: $title4;
+                    line-height: 22px;
+                    color: $error;
+                    position: absolute;
+                    right: 95px;
+                    top: 19px;
+                    @media only screen and (min-width: 768px) {
+                        font-size: $text;
+                        right: 100px;
+                        top: 20px;
+                    }
+                }
+                button {
+                    position: absolute;
+                    right: 7px;
+                    bottom: 7.5px;
+                    border: none;
+                    background-color: $blue;
+                    color: $darkWhite;
+                    border-radius: 10px;
+                    padding: 12.5px 16px;
+                    font-weight: bold;
+                    &:hover {
+                        @media only screen and (min-width: 1400px) {
+                            cursor: url('../../assets/pointer.png'), pointer;
+                            background-color: $buttonHover;
+                        }
+                    }
+                }
+            }
+        }
+        section {
+            transition: ease-in 0.3s;
+            background-color: $white;
+            border-radius: 15px;
+            margin-top: 16px;
+            padding: 0px 24px;
+            box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+            @media only screen and (min-width: 768px) {
+                margin-top: 24px;
+            }
+            @media only screen and (min-width: 1400px) {
+                padding: 0px 48px 0px 203px;
+            }
+            .personalInfo {
+                display: flex;
+                justify-content: flex-start;
+                padding-top: 32px;
+                @media only screen and (min-width: 1400px) {
+                    position: relative;
+                    flex-direction: column;
+                }
+                .profilePicture {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    margin-right: 19px;
+                    @media only screen and (min-width: 768px) {
+                        width: 117px;
+                        height: 117px;
+                        margin-right: 41px;
+                    }
+                    @media only screen and (min-width: 1400px) {
+                        margin-left: -154px;
+                        position: absolute;
+                    }
+                }
+                .rightSide {
+                    @media only screen and (min-width: 1400px) {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                    }
+                    h1 {
+                        font-weight: bold;
+                        font-size: $title3;
+                        line-height: $title3Height;
+                        @media only screen and (min-width: 768px) {
+                            font-size: $title1;
+                            line-height: 39px;
+                        }
+                    }
+                    span {
+                        font-size: $title4;
+                        line-height: 19px;
+                        color: $blue;
+                        @media only screen and (min-width: 768px) {
+                            font-size: $title3;
+                            line-height: 24px;
+                        }
+                        @media only screen and (min-width: 1400px) {
+                            grid-column: 1;
+                            grid-row: 2;
+                        }
+                    }
+                    h2 {
+                        font-size: $title4;
+                        line-height: 19px;
+                        color: $darkGray;
+                        font-weight: normal;
+                        padding-top: 6px;
+                        @media only screen and (min-width: 768px) {
+                            padding-top: 4px;
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                        @media only screen and (min-width: 1400px) {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            p {
+                padding: 33px 0px 23px 0px;
+                font-size: $title4;
+                line-height: $textHeight;
+                color: $blueGray;
+                @media only screen and (min-width: 768px) {
+                    font-size: $text;
+                    line-height: 25px;
+                }
+                @media only screen and (min-width: 1400px) {
+                    padding: 5px 0px 32px 0px;
+                }
+            }
+            .profileActivity {
+                transition: ease-in 0.3s;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 18px 0px 19px 0px;
+                border-radius: 10px;
+                background-color: $silver;
+                @media only screen and (min-width: 768px) {
+                    justify-content: flex-start;
+                    .repos {
+                        margin-left: 32px;
+                    }
+                    .followers {
+                        margin-left: 99px;
+                    }
+                    .following {
+                        margin-left: 82px;
+                    }
+                }
+                div {
+                    text-align: center;
+                    @media only screen and (min-width: 768px) {
+                        text-align: left;
+                    }
+                    h1 {
+                        font-size: 11px;
+                        line-height: 16px;
+                        color: $blueGray;
+                        font-weight: normal;
+                        @media only screen and (min-width: 768px) {
+                            font-size: $title4;
+                            line-height: 19px;
+                        }
+                    }
+                    span {
+                        margin-top: 8px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: $title3Height;
+                        color: $black;
+                        @media only screen and (min-width: 768px) {
+                            font-size: $title2;
+                            line-height: $title2Height;
+                        }
+                    }
+                }
+            }
+            .profileInfo {
+                transition: ease-in 0.3s;
+                padding: 24px 0px 48px 0px;
+                display: flex;
+                flex-direction: column;
+                @media only screen and (min-width: 768px) {
+                    padding-top: 11px 0px 40px 0px;
+                    flex-direction: row;
+                    column-gap: 65px;
+                }
+                @media only screen and (min-width: 1400px) {
+                    padding: 18px 0px 52px 0px;
+                }
+                .firstSide,
+                .secondSide {
+                    padding-left: 24px;
+                    @media only screen and (min-width: 768px) {
+                        padding-left: 0px;
+                    }
+                    div {
+                        margin-top: 16px;
+                        display: flex;
+                        align-items: center;
+                        @media only screen and (min-width: 768px) {
+                            margin-top: 19px;
+                        }
+                        .notAvailable {
+                            opacity: 0.5;
+                        }
+                        h1 {
+                            font-size: $text;
+                            line-height: 22px;
+                            margin-left: 16px;
+                            font-weight: normal;
+                            color: $blueGray;
+                        }
+                        .place {
+                            margin-left: 19px;
+                        }
+                        .website {
+                            margin-left: 13px;
+                            &:hover {
+                                cursor: url('../../assets/pointer.png'), pointer;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// // Dark
+
+.dark {
+    transition: ease-in 0.3s;
+    background-color: $darkBlack;
+    main {
+        transition: ease-in 0.3s;
+
+        background-color: $darkBlack;
+        header {
+            transition: ease-in 0.3s;
+            h1 {
+                color: $darkWhite;
+            }
+            .toggle {
+                transition: ease-in 0.3s;
+                background-color: $darkBlack;
+                &:hover {
+                    @media only screen and (min-width: 1400px) {
+                        span {
+                            color: $lightBlue;
+                        }
+                        .toggleImg {
+                            svg {
+                                path {
+                                    fill: $lightBlue;
+                                }
+                            }
+                        }
+                    }
+                }
+                span {
+                    color: $darkWhite;
+                }
+            }
+        }
+        .searchBox {
+            form {
+                box-shadow: none;
+                input {
+                    transition: ease-in 0.3s;
+                    background-color: $darkNavyBlue;
+                    color: $darkWhite;
+                    transition: ease-in 0.3s;
+                    &::placeholder {
+                        color: $darkWhite;
+                    }
+                }
+            }
+        }
+        section {
+            transition: ease-in 0.3s;
+            background-color: $darkNavyBlue;
+            box-shadow: none;
+            .personalInfo {
+                .rightSide {
+                    h1 {
+                        color: $darkWhite;
+                    }
+                    h2 {
+                        color: $darkWhite;
+                    }
+                }
+            }
+            p {
+                color: $darkWhite;
+            }
+            .profileActivity {
+                transition: ease-in 0.3s;
+                background-color: $darkBlack;
+                div {
+                    h1 {
+                        color: $darkWhite;
+                    }
+                    span {
+                        color: $darkWhite;
+                    }
+                }
+            }
+            .profileInfo {
+                transition: ease-in 0.3s;
+                .firstSide,
+                .secondSide {
+                    div {
+                        h1 {
+                            color: $darkWhite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

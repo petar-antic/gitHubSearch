@@ -1,0 +1,48 @@
+// // Typography
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+// // Fonts
+
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+// Font Size
+
+$title1: 26px;
+$title2: 22px;
+$title3: 16px;
+$title4: 13px;
+$text: 15px;
+
+// Line Height
+
+$title1Height: 38px;
+$title2Height: 33px;
+$title3Height: 24px;
+$title4Height: 20px;
+$textHeight: 25px;
+
+// // Colors
+
+// Light mode colors
+
+$blue: #0079ff;
+$darkGray: #697c9a;
+$blueGray: #4b6a9b;
+$black: #2b3442;
+$silver: #f6f8ff;
+$white: #fefefe;
+
+// Dark mode colors
+
+$blue: #0079ff;
+$darkWhite: #ffffff;
+$darkBlack: #141d2f;
+$darkNavyBlue: #1e2a47;
+
+$fontColor: #222731;
+$error: #f74646;
+$buttonHover: #60abff;
+$lightBlue: #90a4d4;
