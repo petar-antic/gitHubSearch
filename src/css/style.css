@@ -39,6 +39,9 @@ body main header h1 {
   font-weight: bold;
   color: #222731;
 }
+body main header h1:hover {
+  cursor: url("../../assets/pointer.png"), pointer;
+}
 body main header .toggle {
   transition: ease-in 0.3s;
   margin: 9px 0px;
