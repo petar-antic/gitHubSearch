@@ -116,7 +116,7 @@ form.addEventListener('submit', (e) => {
                     website.classList.add('notAvailable');
                     websiteSvg.classList.add('notAvailable');
                     website.style.textDecoration = 'none';
-                    website.addEventListener('mouseover', function () {
+                    website.addEventListener('mousein', function () {
                         website.style.cursor = 'default';
                         website.style.textDecoration = 'none';
                     });
@@ -124,7 +124,7 @@ form.addEventListener('submit', (e) => {
                     websiteSvg.classList.remove('notAvailable');
                     website.classList.remove('notAvailable');
                     website.innerHTML = data.blog;
-                    website.addEventListener('mouseover', function () {
+                    website.addEventListener('mousein', function () {
                         website.style.cursor =
                             'url(/assets/pointer.png), pointer';
                         website.style.textDecoration = 'underline';
