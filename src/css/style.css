@@ -361,10 +361,6 @@ body main section .profileInfo .firstSide div .notAvailable,
 body main section .profileInfo .secondSide div .notAvailable {
   opacity: 0.5;
 }
-body main section .profileInfo .firstSide div .notAvailable svg path,
-body main section .profileInfo .secondSide div .notAvailable svg path {
-  fill: #fff;
-}
 body main section .profileInfo .firstSide div h1,
 body main section .profileInfo .secondSide div h1 {
   font-size: 15px;

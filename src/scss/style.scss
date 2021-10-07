@@ -303,11 +303,6 @@ body {
                         }
                         .notAvailable {
                             opacity: 0.5;
-                            svg {
-                                path {
-                                    fill: #fff;
-                                }
-                            }
                         }
                         h1 {
                             font-size: $text;

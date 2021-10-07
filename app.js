@@ -116,18 +116,20 @@ form.addEventListener('submit', (e) => {
                     website.classList.add('notAvailable');
                     websiteSvg.classList.add('notAvailable');
                     website.style.textDecoration = 'none';
+                    website.style.cursor = 'text';
                     website.addEventListener('mousein', function () {
-                        website.style.cursor = 'default';
                         website.style.textDecoration = 'none';
+                        website.style.cursor = 'text';
                     });
                 } else {
                     websiteSvg.classList.remove('notAvailable');
                     website.classList.remove('notAvailable');
                     website.innerHTML = data.blog;
+                    website.style.textDecoration = 'block';
                     website.addEventListener('mousein', function () {
+                        website.style.textDecoration = 'underline';
                         website.style.cursor =
                             'url(/assets/pointer.png), pointer';
-                        website.style.textDecoration = 'underline';
                     });
                 }
 
@@ -153,6 +155,3 @@ form.addEventListener('submit', (e) => {
             }
         });
 });
-
-userLink.href = data.html_url;
-userLink.textContent = `@${data.login}`;
