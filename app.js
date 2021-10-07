@@ -78,6 +78,7 @@ form.addEventListener('submit', (e) => {
     fetch(`https://api.github.com/users/${input.value}`)
         .then((response) => response.json())
         .then((data) => {
+            console.log(data);
             if (!data.login) {
                 error.innerHTML = 'No results';
             } else {
@@ -87,7 +88,7 @@ form.addEventListener('submit', (e) => {
                 } else {
                     profileName.innerHTML = data.name;
                 }
-                profileUrl.innerHTML = data.html_url;
+                profileUrl.innerText = `@${data.login}`;
                 joinDate.innerHTML = `${showDate(data.created_at)}`;
 
                 if (data.bio === null) {
@@ -152,3 +153,6 @@ form.addEventListener('submit', (e) => {
             }
         });
 });
+
+userLink.href = data.html_url;
+userLink.textContent = `@${data.login}`;
