@@ -28,9 +28,6 @@ body {
                 line-height: 39px;
                 font-weight: bold;
                 color: $fontColor;
-                &:hover {
-                    cursor: url('../../assets/pointer.png'), pointer;
-                }
             }
             .toggle {
                 transition: ease-in 0.3s;
