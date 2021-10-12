@@ -197,6 +197,15 @@ body {
                             grid-column: 1;
                             grid-row: 2;
                         }
+                        a {
+                            &:hover {
+                                text-decoration: underline;
+                                cursor: url(/assets/pointer.png), pointer;
+                            }
+                            &:visited {
+                                text-decoration: none;
+                            }
+                        }
                     }
                     h2 {
                         font-size: $title4;
@@ -316,9 +325,15 @@ body {
                         }
                         .website {
                             margin-left: 13px;
-                            &:hover {
-                                cursor: url('../../assets/pointer.png'), pointer;
-                                text-decoration: underline;
+                            a {
+                                &:hover {
+                                    cursor: url('../../assets/pointer.png'),
+                                        pointer;
+                                    text-decoration: underline;
+                                }
+                                &:visited {
+                                    text-decoration: none;
+                                }
                             }
                         }
                     }

@@ -226,6 +226,13 @@ body main section .personalInfo .rightSide span {
     grid-row: 2;
   }
 }
+body main section .personalInfo .rightSide span a:hover {
+  text-decoration: underline;
+  cursor: url(/assets/pointer.png), pointer;
+}
+body main section .personalInfo .rightSide span a:visited {
+  text-decoration: none;
+}
 body main section .personalInfo .rightSide h2 {
   font-size: 13px;
   line-height: 19px;
@@ -377,10 +384,14 @@ body main section .profileInfo .firstSide div .website,
 body main section .profileInfo .secondSide div .website {
   margin-left: 13px;
 }
-body main section .profileInfo .firstSide div .website:hover,
-body main section .profileInfo .secondSide div .website:hover {
+body main section .profileInfo .firstSide div .website a:hover,
+body main section .profileInfo .secondSide div .website a:hover {
   cursor: url("../../assets/pointer.png"), pointer;
   text-decoration: underline;
+}
+body main section .profileInfo .firstSide div .website a:visited,
+body main section .profileInfo .secondSide div .website a:visited {
+  text-decoration: none;
 }
 
 .dark {

@@ -88,7 +88,17 @@ form.addEventListener('submit', (e) => {
                 } else {
                     profileName.innerHTML = data.name;
                 }
+
                 profileUrl.innerText = `@${data.login}`;
+                profileUrl.addEventListener('click', function () {
+                    window.location = data.html_url;
+                });
+                profileUrl.addEventListener('mousein', function () {
+                    profileUrl.style.textDecoration = 'underline';
+                    profileUrl.style.cursor =
+                        'url(/assets/pointer.png), pointer';
+                });
+
                 joinDate.innerHTML = `${showDate(data.created_at)}`;
 
                 if (data.bio === null) {
@@ -111,7 +121,7 @@ form.addEventListener('submit', (e) => {
                     place.innerHTML = data.location;
                 }
 
-                if (data.blog === '') {
+                if (data.blog === null) {
                     website.innerHTML = 'Not Available';
                     website.classList.add('notAvailable');
                     websiteSvg.classList.add('notAvailable');
@@ -126,6 +136,9 @@ form.addEventListener('submit', (e) => {
                     website.classList.remove('notAvailable');
                     website.innerHTML = data.blog;
                     website.style.textDecoration = 'block';
+                    website.addEventListener('click', function () {
+                        window.location = data.blog;
+                    });
                     website.addEventListener('mousein', function () {
                         website.style.textDecoration = 'underline';
                         website.style.cursor =
